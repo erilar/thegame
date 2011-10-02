@@ -1,3 +1,6 @@
 /bin
 /gen
 /target
+gen
+.settings
+default.properties
