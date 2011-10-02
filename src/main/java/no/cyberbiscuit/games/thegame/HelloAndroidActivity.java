@@ -1,5 +1,6 @@
-package no.simjan.games.thegame;
+package no.cyberbiscuit.games.thegame;
 
+import no.simjan.games.thegame.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
