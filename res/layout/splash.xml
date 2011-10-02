@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/dungeonwall">
+
+<TextView android:text="@string/app_name" android:textColor="@color/menuTextColor"
+		android:typeface="serif" android:textSize="40px" android:textStyle="bold"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:gravity="center_horizontal" android:id="@+id/menu_title"
+		android:padding="20dp"></TextView>
+	
+</LinearLayout>
