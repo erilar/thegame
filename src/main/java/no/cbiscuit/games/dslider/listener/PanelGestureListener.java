@@ -5,10 +5,10 @@ import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class BubblesGestureListener extends SimpleOnGestureListener {
+public class PanelGestureListener extends SimpleOnGestureListener {
 	private View view;
 
-	public BubblesGestureListener(View view) {
+	public PanelGestureListener(View view) {
 		this.view = view;
 	}
 

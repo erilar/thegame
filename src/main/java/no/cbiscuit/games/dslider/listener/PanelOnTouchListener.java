@@ -4,12 +4,12 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class BubblesOnTouchListener implements View.OnTouchListener {
+public class PanelOnTouchListener implements View.OnTouchListener {
 	
 	private GestureDetector gestureDetector;
 	
-	public BubblesOnTouchListener(View view){
-		this.gestureDetector = new GestureDetector(new BubblesGestureListener(view));;
+	public PanelOnTouchListener(View view){
+		this.gestureDetector = new GestureDetector(new PanelGestureListener(view));;
 	}
 	
 	
