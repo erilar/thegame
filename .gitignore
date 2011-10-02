@@ -5,3 +5,4 @@ gen
 .settings
 default.properties
 .project
+.classpath
