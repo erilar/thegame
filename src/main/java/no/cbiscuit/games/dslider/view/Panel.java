@@ -8,8 +8,8 @@ import android.view.SurfaceView;
 
 public class Panel extends SurfaceView implements SurfaceHolder.Callback {
 
-	public static float mWidth;
-	public static float mHeight;
+	public static float panelWidth;
+	public static float panelHeigth;
 
 	public Panel(Context context) {
 		super(context);
