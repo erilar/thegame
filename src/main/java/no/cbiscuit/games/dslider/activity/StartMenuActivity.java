@@ -1,6 +1,6 @@
-package no.cyberbiscuit.games.thegame;
+package no.cbiscuit.games.dslider.activity;
 
-import no.simjan.games.thegame.R;
+import no.cbiscuit.games.dslider.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;

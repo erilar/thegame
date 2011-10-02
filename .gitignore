@@ -2,7 +2,7 @@
 /gen
 /target
 gen
-.settings
+/.settings
 default.properties
 .project
 .classpath
