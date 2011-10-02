@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello thegame!</string>
-    <string name="app_name">thegame</string>
+   	<string name="app_name">Dungeon Slider</string>
+	<color name="buttonStartColor">#000000</color>
+	<color name="buttonStopColor">#696969</color>
+	<color name="buttonStrokeColor">#000000</color>
+	<color name="focusedStartColor">#000000</color>
+	<color name="focusedStopColor">#000080</color>
+	<color name="pressedStartColor">#696969</color>
+	<color name="pressedStopColor">#d3d3d3</color>
+	<color name="backgroundColor">#add8e6</color>
+	<color name="menuTextColor">#ffffff</color>
 </resources>

@@ -4,10 +4,11 @@ import no.simjan.games.thegame.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Window;
 
-public class HelloAndroidActivity extends Activity {
+public class StartMenuActivity extends Activity {
 
-    private static String TAG = "thegame";
+    private static String TAG = "StartMenuActivity";
 
     /**
      * Called when the activity is first created.
@@ -19,7 +20,8 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		Log.i(TAG, "onCreate");
-        setContentView(R.layout.main);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.startmenu);
     }
 
 }
