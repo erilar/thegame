@@ -166,13 +166,27 @@ public class Mobile {
 	public void setmSpeedY(double mSpeedY) {
 		this.speedY = mSpeedY;
 	}
-
-	public float[] crash(float xCo1,float yCo1, float xSpd1, float ySpd1,float xCo2,float yCo2,float xSpd2, float ySpd2 ){
+/**
+ *  Method for calculating the new x speed og y speed for two mobiles colliding. The active mobile is considered heavier for a 
+ *  sweeter impact
+ * @param xCoordinateforActiveMobile 
+ * @param yCoordinateforActiveMobile
+ * @param xSpeedforActiveMobile
+ * @param ySpeedforActiveMobile
+ * @param xCoordinateforMobile2
+ * @param yCoordinateforMobile2
+ * @param xSpeedforMobile2
+ * @param ySpeedforMobile2
+ * @returns an array with xSpeedForMobile1,ySpeedForMobile1,xSpeedForMobile2,ySpeedForMobile2.
+ */
+  
+ 
+	public float[] crash(float xCoordinateforActiveMobile,float yCoordinateforActiveMobile, float xSpeedforActiveMobile, float ySpeedforActiveMobile,float xCoordinateforMobile2,float yCoordinateforMobile2,float xSpeedforMobile2, float ySpeedforMobile2 ){
 		float[] crash=new float[4];
 		float dx;
 		float dy;
-		float mass1=1;
-		float mass2=1;
+		float mass1=5;
+		float mass2=4;
 		float collisionA;
 		float magnitude1;
 		float magnitude2;
@@ -186,13 +200,13 @@ public class Mobile {
 		float finalYspeed1;
 		float finalXspeed2;
 		float finalYspeed2;
-		dx = xCo1-xCo2;
-		dy = yCo1-yCo2;
+		dx = xCoordinateforActiveMobile-xCoordinateforMobile2;
+		dy = yCoordinateforActiveMobile-yCoordinateforMobile2;
 		collisionA= (float) Math.atan2(dy, dx);
-		magnitude1 = (float) Math.sqrt(xSpd1*xSpd1+ySpd1*ySpd1);
-		magnitude2 = (float) Math.sqrt(xSpd2*xSpd2+ySpd2*ySpd2);
-		direction1 = (float) Math.atan2(ySpd1, xSpd1);
-		direction2 = (float) Math.atan2(ySpd2, xSpd2);
+		magnitude1 = (float) Math.sqrt(xSpeedforActiveMobile*xSpeedforActiveMobile+ySpeedforActiveMobile*ySpeedforActiveMobile);
+		magnitude2 = (float) Math.sqrt(xSpeedforMobile2*xSpeedforMobile2+ySpeedforMobile2*ySpeedforMobile2);
+		direction1 = (float) Math.atan2(ySpeedforActiveMobile, xSpeedforActiveMobile);
+		direction2 = (float) Math.atan2(ySpeedforMobile2, xSpeedforMobile2);
 		XnewSpeed1 = (float) (magnitude1*Math.cos(direction1-collisionA));
 		YnewSpeed1 = (float) (magnitude1*Math.sin(direction1-collisionA));
 		XnewSpeed2 = (float) (magnitude2*Math.cos(direction2-collisionA));
