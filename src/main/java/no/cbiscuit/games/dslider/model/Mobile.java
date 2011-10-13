@@ -167,7 +167,7 @@ public class Mobile {
 		this.speedY = mSpeedY;
 	}
 
-	public static float[] crash(float xCo1,float yCo1, float xSpd1, float ySpd1,float xCo2,float yCo2,float xSpd2, float ySpd2 ){
+	public float[] crash(float xCo1,float yCo1, float xSpd1, float ySpd1,float xCo2,float yCo2,float xSpd2, float ySpd2 ){
 		float[] crash=new float[4];
 		float dx;
 		float dy;
