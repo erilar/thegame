@@ -4,6 +4,7 @@ import android.content.res.Resources;
 
 public class Creature extends Mobile {
 
+	
 	private int currentHitpoints;
 	private int totalHitpoints;
 	private int damage;
@@ -12,6 +13,7 @@ public class Creature extends Mobile {
 		super(res, x, y);
 	}
 
+	
 	public int getCurrentHitpoints() {
 		return currentHitpoints;
 	}
