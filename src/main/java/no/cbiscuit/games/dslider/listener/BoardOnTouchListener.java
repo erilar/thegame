@@ -4,12 +4,12 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class PanelOnTouchListener implements View.OnTouchListener {
+public class BoardOnTouchListener implements View.OnTouchListener {
 	
 	private GestureDetector gestureDetector;
 	
-	public PanelOnTouchListener(View view){
-		this.gestureDetector = new GestureDetector(new PanelGestureListener(view));;
+	public BoardOnTouchListener(View view){
+		this.gestureDetector = new GestureDetector(new BoardGestureListener(view));;
 	}
 	
 	

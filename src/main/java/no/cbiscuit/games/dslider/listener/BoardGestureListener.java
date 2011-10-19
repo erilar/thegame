@@ -1,27 +1,27 @@
 package no.cbiscuit.games.dslider.listener;
 
-import no.cbiscuit.games.dslider.view.Panel;
+import no.cbiscuit.games.dslider.view.GameBoard;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class PanelGestureListener extends SimpleOnGestureListener {
+public class BoardGestureListener extends SimpleOnGestureListener {
 	private View view;
 
-	public PanelGestureListener(View view) {
+	public BoardGestureListener(View view) {
 		this.view = view;
 	}
 
 	@Override
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
 			float velocityY) {
-		((Panel) view).addElement(e1, velocityX, velocityY);
+		((GameBoard) view).addElement(e1, velocityX, velocityY);
 		return false;
 	}
 
 	@Override
 	public boolean onSingleTapConfirmed(MotionEvent e) {
-		((Panel) view).addElement(e);
+		((GameBoard) view).addElement(e);
 		return super.onSingleTapConfirmed(e);
 	}
 

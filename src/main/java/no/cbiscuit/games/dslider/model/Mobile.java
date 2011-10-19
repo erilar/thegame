@@ -3,7 +3,7 @@ package no.cbiscuit.games.dslider.model;
 import java.util.Random;
 
 import no.cbiscuit.games.dslider.activity.R;
-import no.cbiscuit.games.dslider.view.Panel;
+import no.cbiscuit.games.dslider.view.GameBoard;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -95,17 +95,17 @@ public class Mobile {
 		if (coordinateX <= 0) {
 			speedX = -speedX;
 			coordinateX = 0;
-		} else if (coordinateX + aliveImage.getWidth() >= Panel.panelWidth) {
+		} else if (coordinateX + aliveImage.getWidth() >= GameBoard.panelWidth) {
 			speedX = -speedX;
-			coordinateX = Panel.panelWidth - aliveImage.getWidth();
+			coordinateX = GameBoard.panelWidth - aliveImage.getWidth();
 		}
 		if (coordinateY <= 0) {
 			coordinateY = 0;
 			speedY = -speedY;
 		}
-		if (coordinateY + aliveImage.getHeight() >= Panel.panelHeigth) {
+		if (coordinateY + aliveImage.getHeight() >= GameBoard.panelHeigth) {
 			speedY = -speedY;
-			coordinateY = Panel.panelHeigth - aliveImage.getHeight();
+			coordinateY = GameBoard.panelHeigth - aliveImage.getHeight();
 		}
 	}
 
